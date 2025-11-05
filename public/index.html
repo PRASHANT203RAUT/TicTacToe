@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+      <div class="status" id="status">Waiting for Players to Connect...</div>
+
+  <div class="board-wrapper">
+    
+
+    <div class="board">
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+       <div class="strike-line" id="strike"></div>
+    </div>
+ 
+    <div class="line vertical v1"></div>
+    <div class="line vertical v2"></div>
+    <div class="line horizontal h1"></div>
+    <div class="line horizontal h2"></div>
+  </div>
+
+  <button id="play-again" style="display: none;">Play Again 🔁</button>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+  <script src="script2.js"></script>
+   <!-- <script src="script.js"></script> -->
+</body>
+</html>

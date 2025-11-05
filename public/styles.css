@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*{
+  font-family: pp mori;
+}
+.board-wrapper {
+  position: relative;
+  width: 480px;
+  height: 480px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  gap: 0;
+  z-index: 1;
+}
+
+.cell {
+  font-size: 100px;
+background-color: aqua;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  color: black;
+  height: 150px;
+}
+
+.cell:focus {
+  outline: none;
+}
+
+/* Grid lines */
+.line {
+  position: absolute;
+  background-color: black;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+/* Vertical lines */
+.vertical {
+  width: 10px;
+  height: 100%;
+  top: 0;
+}
+
+.v1 {
+  left: 33.33%;
+  transform: translateX(-50%);
+}
+
+.v2 {
+  left: 66.66%;
+  transform: translateX(-50%);
+}
+
+/* Horizontal lines */
+.horizontal {
+  height: 10px;
+  width: 100%;
+  left: 0;
+}
+
+.h1 {
+  top: 33.33%;
+  transform: translateY(-50%);
+}
+
+.h2 {
+  top: 66.66%;
+  transform: translateY(-50%);
+}
+.status {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+  text-align: center;   
+  color: darkblue;
+}
+.strike-line {
+  position: absolute;
+  height: 10px;
+  background-color: red;
+  border-radius: 5px;
+  display: none;
+  z-index: 10;
+  transform-origin: left center;
+}
+
